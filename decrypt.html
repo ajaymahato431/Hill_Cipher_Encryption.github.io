@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hill Cipher Cryptography</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Encryption using 3*3 Hill Cipher Cryptography</h1>
+
+    <div class="container">
+      <div class="decryption">
+        <h2>To decrypt text, Enter or paste it here and press "Encrypt"</h2>
+
+        <textarea class="text" placeholder="Replace 'Z' with 'SPACE' while reading the decrypted plain text"></textarea>
+        <button class="decrypt-button" onclick="decryptText()">Decrypt</button>
+      </div>
+
+      <div class="vl"></div>
+
+      <div class="decrypted">
+        <h2>Your decrypted text are here</h2>
+        <p class="text" id="dText"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

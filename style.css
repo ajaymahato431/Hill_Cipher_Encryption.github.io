@@ -1,0 +1,107 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    background-color: rgba(214, 208, 208, 0.485);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+}
+
+h2 {
+    color: rgb(63, 57, 57);
+}
+
+
+
+.container {
+    margin: 50px 80px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.vl {
+    border-left: 6px solid rgba(214, 208, 208, 0.485);
+    height: 500px;
+}
+
+.encryption,
+.decryption {
+    width: 650px;
+}
+
+.encrypted,
+.decrypted {
+    width: 650px;
+    margin-left: 6px;
+
+}
+
+.text {
+    background-color: rgba(235, 235, 235, 0.844);
+    width: 95%;
+    height: 95%;
+    font-size: 20px;
+    border: none;
+    outline-color: rgb(178, 178, 178);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    resize: none;
+}
+
+textarea.text {
+    position: relative;
+}
+
+p.text {
+    margin-top: -1px;
+}
+
+.encrypt-button,
+.decrypt-button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(46, 221, 46);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 32.5%;
+    margin-left: -9%;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .encrypt-button,
+    .decrypt-button {
+        margin-top: 39%;
+        margin-left: -10%;
+    }
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+}
+
+.readme {
+    color: rgb(83, 80, 80);
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}

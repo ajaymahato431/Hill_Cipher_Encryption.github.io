@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hill Cipher Cryptography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Encryption using 3*3 Hill Cipher Cryptography</h1>
+
+  <div class="container">
+    <div class="encryption">
+      <textarea class="text" id="plainText"
+        placeholder="To encrypt text, Enter or paste it here and press 'Encrypt' ; Add 'SPACE' at last of your plainText if you see boxes in encrypted text"></textarea>
+      <button class="encrypt-button" onclick="encryptText()">Encrypt</button>
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="encrypted">
+      <p class="text" id="cipherText"></p>
+    </div>
+  </div>
+
+  <h1>Decryption using 3*3 Hill Cipher Cryptography</h1>
+
+  <div class="container">
+    <div class="decryption">
+      <textarea class="text" placeholder="To decrypt text, Enter or paste it here and press 'Encrypt' ; Replace 'Z' with 'SPACE' while reading the decrypted plain text"></textarea>
+      <button class="decrypt-button" onclick="decryptText()">Decrypt</button>
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="decrypted">
+      <p class="text" id="dText"></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="readme">
+      <h2>
+        Please Read these points to know about this encryption system
+      </h2>
+      <ol>
+        <li>It is a 3*3 hill cipher cryptography technique.</li>
+        <li>It is using the following 3*3 key matrix:<br>
+          <div class="grid-3">
+            <div class="column">
+              6<br>13<br>20
+            </div>
+            <div class="column">
+              24<br>16<br>17
+            </div>
+            <div class="column">
+              1<br>10<br>15
+            </div>
+          </div>
+        </li>
+        <li>It supports 26 characters i.e. A to Z.</li>
+        <li>It changes [SPACE] by converting it into 'Z', so in decrypted text, replace 'Z' with [SPACE] to get exact
+          plain text</li>
+        <li>It encrypts the plain text, 3 characters at once, so make sure your plaintext is multiple of 3; if not then
+          add [SPACE] at last to make it multiple of 3.</li>
+      </ol>
+      <br><br>
+      <div class="credits">
+        <div class="developer">
+          <strong>Developed by:</strong><br>
+          Ajay Mahato<br>
+          Balkumari College, Bharatpur
+        </div>
+        <div class="teacher">
+          <strong>Idea given by:</strong><br>
+          Ramesh Khanal<br>
+          Mathematics Professor
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
