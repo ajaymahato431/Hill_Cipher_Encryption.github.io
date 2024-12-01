@@ -9,13 +9,13 @@
                 It is using the following 3x3 key matrix:
                 <div class="key-matrix">
                     <div>
-                        <span>6</span><span>24</span><span>1</span>
+                        <span>6</span>&emsp;<span>24</span>&emsp;<span>1</span>
                     </div>
                     <div>
-                        <span>13</span><span>16</span><span>10</span>
+                        <span>13</span>&emsp;<span>16</span>&emsp;<span>10</span>
                     </div>
                     <div>
-                        <span>20</span><span>17</span><span>15</span>
+                        <span>20</span>&emsp;<span>17</span>&emsp;<span>15</span>
                     </div>
                 </div>
             </li>
