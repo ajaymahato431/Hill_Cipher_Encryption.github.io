@@ -14,7 +14,7 @@
   <div class="container">
     <div class="encryption">
       <textarea class="text" id="plainText"
-        placeholder="To encrypt text, Enter or paste it here and press 'Encrypt' ; Add 'SPACE' at last of your plainText if you see boxes in encrypted text"></textarea>
+        placeholder="To encrypt text, Enter or paste it here and press 'Encrypt'"></textarea>
       <button class="encrypt-button" onclick="encryptText()">Encrypt</button>
     </div>
 
@@ -29,7 +29,7 @@
 
   <div class="container">
     <div class="decryption">
-      <textarea class="text" placeholder="To decrypt text, Enter or paste it here and press 'Encrypt' ; Replace 'Z' with 'SPACE' while reading the decrypted plain text"></textarea>
+      <textarea class="text" placeholder="To decrypt text, Enter or paste it here and press 'Decrypt'"></textarea>
       <button class="decrypt-button" onclick="decryptText()">Decrypt</button>
     </div>
 
@@ -61,10 +61,8 @@
           </div>
         </li>
         <li>It supports 26 characters i.e. A to Z.</li>
-        <li>It changes [SPACE] by converting it into 'Z', so in decrypted text, replace 'Z' with [SPACE] to get exact
-          plain text</li>
-        <li>It encrypts the plain text, 3 characters at once, so make sure your plaintext is multiple of 3; if not then
-          add [SPACE] at last to make it multiple of 3.</li>
+        <li>It doesn't support decrypting character 'Z' so make sure to avoid using 'Z' in your plaintext.</li>
+        <li>It encrypts the plain text, 3 characters at once.</li>
       </ol>
       <br><br>
       <div class="credits">
